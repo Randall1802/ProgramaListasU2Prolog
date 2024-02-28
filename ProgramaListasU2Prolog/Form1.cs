@@ -65,7 +65,7 @@ namespace ProgramaListasU2Prolog
 				int cantidad = int.Parse(textBoxCantidad.Text);
 
 				// Buscar cliente en la lista
-				Cliente cliente = new Cliente() //clientes.FirstOrDefault(c => c.ClienteId == clienteId || c.Nombre == clienteNombre);
+				Cliente cliente = new Cliente(); //clientes.FirstOrDefault(c => c.ClienteId == clienteId || c.Nombre == clienteNombre);
 				if (cliente == null)
 				{
 					// Si no se encuentra, agregar nuevo cliente
