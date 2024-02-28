@@ -24,7 +24,7 @@ namespace ProgramaListasU2Prolog
 		{
 			public int ClienteId { get; set; }
 			public string Nombre { get; set; }
-			public string NombreCliente => Nombre; // Nueva propiedad para mostrar en la compra
+			public string NombreCliente => Nombre; 
 
 		}
 
@@ -33,7 +33,7 @@ namespace ProgramaListasU2Prolog
 			public int ProductoId { get; set; }
 			public string Nombre { get; set; }
 			public decimal Precio { get; set; }
-			public string NombreProducto => Nombre; // Nueva propiedad para mostrar en la compra
+			public string NombreProducto => Nombre; 
 
 		}
 
@@ -45,7 +45,7 @@ namespace ProgramaListasU2Prolog
 			public decimal Precio { get; set; }
 			public int Cantidad { get; set; }
 
-			//// Nuevas propiedades para mostrar en el DataGridView
+			// propiedades para mostrar en el DataGridView
 			//public string NombreCliente => Cliente?.NombreCliente ?? "";
 			//public string NombreProducto => Producto?.NombreProducto ?? "";
 			public decimal Total => Precio * Cantidad;
@@ -65,7 +65,7 @@ namespace ProgramaListasU2Prolog
 				int cantidad = int.Parse(textBoxCantidad.Text);
 
 				// Buscar cliente en la lista
-				Cliente cliente = new Cliente();// = clientes.FirstOrDefault(c => c.ClienteId == clienteId || c.Nombre == clienteNombre);
+				Cliente cliente = new Cliente() //clientes.FirstOrDefault(c => c.ClienteId == clienteId || c.Nombre == clienteNombre);
 				if (cliente == null)
 				{
 					// Si no se encuentra, agregar nuevo cliente
@@ -74,7 +74,7 @@ namespace ProgramaListasU2Prolog
 				}
 
 				// Buscar producto en la lista
-				Producto producto = new Producto();  //productos.FirstOrDefault(p => p.ProductoId == productoId || p.Nombre == productoNombre);
+				Producto producto = new Producto();// productos.FirstOrDefault(p => p.ProductoId == productoId || p.Nombre == productoNombre);
 				if (producto == null)
 				{
 					// Si no se encuentra, agregar nuevo producto

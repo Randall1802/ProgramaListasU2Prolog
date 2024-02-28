@@ -128,13 +128,16 @@
 			// 
 			dataGridViewCompras1.AllowUserToAddRows = false;
 			dataGridViewCompras1.AllowUserToDeleteRows = false;
+			dataGridViewCompras1.AllowUserToResizeColumns = false;
+			dataGridViewCompras1.AllowUserToResizeRows = false;
+			dataGridViewCompras1.BackgroundColor = SystemColors.AppWorkspace;
 			dataGridViewCompras1.CausesValidation = false;
 			dataGridViewCompras1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridViewCompras1.Location = new Point(124, 260);
+			dataGridViewCompras1.Location = new Point(48, 260);
+			dataGridViewCompras1.MultiSelect = false;
 			dataGridViewCompras1.Name = "dataGridViewCompras1";
-			dataGridViewCompras1.ReadOnly = true;
 			dataGridViewCompras1.RowTemplate.Height = 25;
-			dataGridViewCompras1.Size = new Size(622, 150);
+			dataGridViewCompras1.Size = new Size(767, 150);
 			dataGridViewCompras1.TabIndex = 12;
 			// 
 			// textBoxCantidad
