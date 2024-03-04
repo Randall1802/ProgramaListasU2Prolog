@@ -24,7 +24,7 @@ namespace ProgramaListasU2Prolog
 		{
 			public int ClienteId { get; set; }
 			public string Nombre { get; set; }
-			public string NombreCliente => Nombre; 
+			public string NombreCliente => Nombre;
 
 		}
 
@@ -33,7 +33,7 @@ namespace ProgramaListasU2Prolog
 			public int ProductoId { get; set; }
 			public string Nombre { get; set; }
 			public decimal Precio { get; set; }
-			public string NombreProducto => Nombre; 
+			public string NombreProducto => Nombre;
 
 		}
 
@@ -107,6 +107,11 @@ namespace ProgramaListasU2Prolog
 			{
 				MessageBox.Show($"Se produjo un error: {ex.Message}");
 			}
+		}
+
+		private void label4_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
